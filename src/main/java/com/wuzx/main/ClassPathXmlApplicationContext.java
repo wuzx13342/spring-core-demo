@@ -8,7 +8,8 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ClassPathXmlApplicationContext implements BeanFactory {//配置信息
+public class ClassPathXmlApplicationContext implements BeanFactory {
+    //配置信息
     private Map<String,Bean> config;
     //用一个Map来做spring的容器，放置spring所管理的对象
     private Map<String,Object> context = new HashMap<String,Object>();

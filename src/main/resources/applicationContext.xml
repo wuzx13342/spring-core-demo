@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <beans>
-    <bean name="student" class="com.wuzx.entity.Student" >
-        <property name="name" value="123"></property>
+    <bean name="A" class="com.wuzx.entity.A">
+        <property name="name" value="Tom"></property>
     </bean>
 
-    <bean name="teacher" class="com.wuzx.entity.Teacher">
-        <property name="student" ref="student"></property>
+    <bean name="B" class="com.wuzx.entity.bean.B">
+        <property name ="a" ref="A"></property>
     </bean>
-
-    <bean name="person" class="com.wuzx.entity.Person" scope="prototype">
-        <property name="teacher" ref="teacher"></property>
-        <property name="student" ref="student"></property>
-    </bean>
-
 </beans>
