@@ -1,5 +1,9 @@
 package com.springstudy.simplespring;
 
+/**
+ * @author wuzhixiang
+ *
+ */
 public class BeanDefinition {
 	private Class beanClass;
 	private String beanClassName;
